@@ -1,11 +1,13 @@
 {
-  "homepage":"https://github.com/joche26/toolbox-front",
+  "homepage": "https://joche26.github.io/toolbox-front",
   "name": "front-toolbox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
